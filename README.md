@@ -29,7 +29,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-I was using JavaScript after a long time for this project. The functions were familiar but implementing them took some time. I learned new functions like map, reduce, and filter. I will use them in my future projects as well. Overall, it was a fun pre-work.
+This prework project allowed me to refresh my knowledge of HTML/CSS and gain more experience with JavaScript features such as template literals, functions, filter, map, reduce, destructuring and spread operators, logic evaluation, as well as using JavaScript to manipulate HTML elements.
 
 ## License
 
