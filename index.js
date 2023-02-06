@@ -41,7 +41,7 @@ function addGamesToPage(games) {
         // about each game
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
-            const display = '<img src="'+games[i]["img"]+'" class="game-img"/>' + "<br>" + "<br>" + games[i]["name"] + "<br>" + "<br>" + games[i]["description"] + "<br>" + "<br>" + "backers: " + games[i]["backers"];
+            const display = '<img src="'+games[i]["img"]+'" class="game-img"/>' + "<br>" + "<br>" + games[i]["name"] + "<br>" + "<br>" + games[i]["description"] + "<br>" + "<br>" + "Backers (Our unique donors): " + games[i]["backers"].toLocaleString('en-US') + "<br>" + "<br>" + "Amount donated by Backers: " + games[i]["pledged"].toLocaleString('en-US') + "<br>" + "<br>" +"Amount Goal: " + games[i]["goal"].toLocaleString('en-US');
             newdiv.innerHTML = display;
 
         // append the game to the games-container
@@ -168,10 +168,28 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 // use destructuring and the spread operator to grab the first and second games
 let [first, second, ...others] = sortedGames;
 // create a new element to hold the name of the top pledge game, then append it to the correct element
-let firstElement = document.createElement("div");
+let firstElement = document.createElement("p");
 firstElement.innerHTML = first.name;
 firstGameContainer.append(firstElement);
 // do the same for the runner up item
-let secondElement = document.createElement("div");
+let secondElement = document.createElement("p");
 secondElement.innerHTML = second.name;
 secondGameContainer.append(secondElement);
+
+/************************************************************************************
+ * Additional features implemented
+ * Search Games */
+let input = document.getElementById("searchbar");
+let inputval = input.value.toLowerCase();
+input.addEventListener(onkeyup, function search_games() {
+    deleteChildElements(gamesContainer);
+
+    let match = GAMES_JSON.filter((game) => {
+        return game.name.toLowerCase().includes(inputval);
+    });
+
+    addGamesToPage(match);
+    
+    
+});
+
