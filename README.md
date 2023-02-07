@@ -18,6 +18,7 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 * [X] Improved the CSS of the website
+* [X] Added a hover scale feature on game cards
 * [X] Added two jump arrows on the top and bottom of the website to scroll directly to sections
 * [X] Attempted to implement a search game functionality
 
