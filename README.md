@@ -4,7 +4,7 @@ Submitted by: **Ayushi**
 
 **Sea Monster** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **5** hours spent in total
+Time spent: **8** hours spent in total
 
 ## Required Features
 
@@ -17,7 +17,9 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [X] Improved the CSS of the website
+* [X] Added two jump arrows on the top and bottom of the website to scroll directly to sections
+* [X] Attempted to implement a search game functionality
 
 ## Video Walkthrough
 
@@ -30,6 +32,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 This prework project allowed me to refresh my knowledge of HTML/CSS and gain more experience with JavaScript features such as template literals, functions, filter, map, reduce, destructuring and spread operators, logic evaluation, as well as using JavaScript to manipulate HTML elements.
+
+I have implemented the search function and it filters correctly but for some reason it is not working on the website with the text box. 
 
 ## License
 
